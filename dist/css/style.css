@@ -820,6 +820,7 @@ textarea:focus {
 
   .section__header {
     font-size: 14px;
+    line-height: 20px;
     margin: 15px 0;
   }
 
