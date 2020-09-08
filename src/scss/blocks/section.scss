@@ -1,0 +1,61 @@
+
+.section {
+    background: $alabaster;
+    padding: 115px 0;
+
+    @media screen and (max-width: $md3 + px) {
+        padding: 70px 0;
+    }
+
+    &__icon {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+
+        img {
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: $md3 + px) {
+            width: 45px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            width: 40px;
+        }
+    }
+
+    &__header {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: $cape-cod;
+        margin: 30px 0;
+
+        @media screen and (max-width: $md3 + px) {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        @media screen and (max-width: $md4 + px) {
+            font-size: 14px;
+            margin: 15px 0;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 18px;
+        line-height: 34px;
+        color: $oslo-gray;
+
+        @media screen and (max-width: $md3 + px) {
+            font-size: 16px;
+            line-height: 30px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            font-size: 13px;
+            line-height: 25px;
+        }
+    }
+}

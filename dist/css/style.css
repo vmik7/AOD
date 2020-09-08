@@ -521,6 +521,15 @@ textarea:focus {
           justify-content: flex-start;
 }
 
+.header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
 .menu__button {
   display: none;
 }
@@ -612,6 +621,38 @@ textarea:focus {
   right: 0.2em;
 }
 
+.section {
+  background: #f7f7f7;
+  padding: 115px 0;
+}
+
+.section__icon {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.section__icon img {
+  max-width: 100%;
+}
+
+.section__header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #353738;
+  margin: 30px 0;
+}
+
+.section__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 34px;
+  color: #848789;
+}
+
 @media screen and (min-width: 769px) {
   .menu__item:not(:last-child)::after {
     content: ".";
@@ -648,6 +689,18 @@ textarea:focus {
   ._container {
     max-width: none;
     padding: 0 10px;
+  }
+
+  .header__container {
+    min-height: 400px;
+  }
+
+  .header__top {
+    margin-top: 15px;
+  }
+
+  .header__logo {
+    width: 75px;
   }
 
   .header__left .header__menu {
@@ -720,6 +773,60 @@ textarea:focus {
   .menu__link::after {
     bottom: -10px;
   }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .section__icon {
+    width: 45px;
+  }
+
+  .section__header {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .section__text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__container {
+    min-height: 300px;
+  }
+
+  .header__logo {
+    width: 60px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .menu__link {
+    font-size: 16px;
+  }
+
+  .menu__link::after {
+    bottom: -5px;
+  }
+
+  .section__icon {
+    width: 40px;
+  }
+
+  .section__header {
+    font-size: 14px;
+    margin: 15px 0;
+  }
+
+  .section__text {
+    font-size: 13px;
+    line-height: 25px;
+  }
 }
 @supports (-webkit-appearance:none){
 .header{background:url("../img/header-bg.webp") center top/cover no-repeat}
@@ -758,6 +865,14 @@ textarea:focus {
 }
 
  @media screen and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 480px){
 
 @supports (-webkit-appearance:none){
 

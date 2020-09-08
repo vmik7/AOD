@@ -12,11 +12,21 @@
         @media screen and (max-width: 1000px) {
             min-height: 506px;
         }
+        @media screen and (max-width: $md3 + px) {
+            min-height: 400px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            min-height: 300px;
+        }
     }
 
     &__top {
         margin-top: 35px;
         display: flex;
+
+        @media screen and (max-width: $md3 + px) {
+            margin-top: 15px
+        }
     }
 
     &__left {
@@ -39,7 +49,15 @@
     }
 
     &__logo {
+        display: block;
+        margin: 0 auto;
         
+        @media screen and (max-width: $md3 + px) {
+            width: 75px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            width: 60px;
+        }
     }
 
     @media screen and (max-width: $md3 + px) {

@@ -119,6 +119,11 @@
                 margin-bottom: 35px;
             }
         }
+        @media screen and (max-width: $md4 + px) {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
     }
 
     // Link
@@ -135,6 +140,9 @@
         @media screen and (max-width: $md3 + px) {
             font-size: 20px;
         }
+        @media screen and (max-width: $md4 + px) {
+            font-size: 16px;
+        }
 
         &::after {
             content: "";
@@ -149,6 +157,9 @@
 
             @media screen and (max-width: $md3 + px) {
                 bottom: -10px;
+            }
+            @media screen and (max-width: $md4 + px) {
+                bottom: -5px;
             }
         }
 
