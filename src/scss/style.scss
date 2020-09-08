@@ -11,6 +11,8 @@
 @import 'fonts';
 
 // Google fonts imports
+@import url(https://fonts.googleapis.com/css?family=Lato:300,regular,italic,700);
+
 
 // Cyrillic support (add this suffix on URL)
 // &display=swap&subset=cyrillic-ext
@@ -20,13 +22,23 @@
 // VARIABLES
 
 // Default font
-$defaultFont: "Arial";
+$defaultFont: "Lato";
 
 // Color for custom outline
 $outline-color: #42a0da;
 
+// Other colors on a page
+$silver-tree: #64c29e;
+$scarpa-flow: #4d4959;
+$alabaster: #f7f7f7;
+$cape-cod: #353738;
+$oslo-gray: #848789;
+$gray: #929292;
+$outer-space: #282f35;
+$gray-chateau: #a9afb3;
+
 // Maximum container width
-$max-container-width: 1170;
+$max-container-width: 1110;
 
 // Media breakpoints
 $md1: $max-container-width + 12;
@@ -39,6 +51,12 @@ $md4: 480;
 // NULL & GENERAL
 
 @import 'null';
+
+// Nulling gefault button style
+button {
+    border: none;
+    background: none;
+}
 
 // _visually-hidden class for elements like default checkbox (it should not be visible, but it should be!)
 ._visually-hidden {
@@ -89,8 +107,9 @@ a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
 // BLOCKS
 
 @import 'blocks/page';
-@import 'blocks/check';
+// @import 'blocks/check';
 @import 'blocks/header';
+@import 'blocks/logo';
 @import 'blocks/menu';
 @import 'blocks/main';
 @import 'blocks/footer';

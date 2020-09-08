@@ -2,5 +2,53 @@
 // Header
 
 .header {
-    
+    background: url('../img/header-bg.jpg') center top / cover no-repeat;
+    @media screen and (max-width: 1000px) {
+        background-image: url('../img/header-bg-1000px.jpg');
+    }
+
+    &__container {
+        min-height: 800px;
+        @media screen and (max-width: 1000px) {
+            min-height: 506px;
+        }
+    }
+
+    &__top {
+        margin-top: 35px;
+        display: flex;
+    }
+
+    &__left {
+        flex: 0 1 50%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__center {
+        text-align: center;
+        flex: 0 0 220px;
+    }
+
+    &__right {
+        flex: 0 1 50%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__logo {
+        
+    }
+
+    @media screen and (max-width: $md3 + px) {
+        &__left &__menu {
+            display: none;
+        }
+        &__right {
+            margin-top: 0;
+            justify-content: flex-end;
+        }
+    }
 }

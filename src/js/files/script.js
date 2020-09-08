@@ -13,9 +13,9 @@ function undoBlocking(element) {
 
 if (window.matchMedia('(max-width: 768px)').matches) {
     const pageBody = document.querySelector('.page__body');
-    const menu = document.querySelector('.menu');
-    const menuButton = document.querySelector('.menu__button');
-    const menuBody = document.querySelector('.menu__body');
+    const menu = document.querySelector('#nmain-menu.menu');
+    const menuButton = document.querySelector('#main-menu .menu__button');
+    const menuBody = document.querySelector('#main-menu .menu__body');
 
     let showNavMenu = () => {
         menuButton.setAttribute('aria-expanded', true)
