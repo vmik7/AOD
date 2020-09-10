@@ -634,7 +634,7 @@ textarea:focus {
 }
 
 .menu__link:hover::after,
-.menu__link:focus::after {
+.menu__link.focus-visible::after {
   left: 0;
   right: 0.2em;
 }
@@ -717,6 +717,19 @@ textarea:focus {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  background: rgba(100, 194, 158, 0);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.brand__link:focus {
+  outline: 0;
+}
+
+.brand__link:hover,
+.brand__link.focus-visible {
+  background: rgba(100, 194, 158, 0.7);
 }
 
 .brand__background {

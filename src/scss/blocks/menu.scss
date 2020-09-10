@@ -167,7 +167,7 @@
             @include no-focus-outline();
         }
 
-        &:hover::after, &:focus::after {
+        &:hover::after, &.focus-visible::after {
             left: 0;
             right: 0.2em;
         }
