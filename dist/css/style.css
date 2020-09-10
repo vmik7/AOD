@@ -445,6 +445,23 @@ textarea:focus {
   outline: 0;
 }
 
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
 ._container {
   max-width: 1140px;
   margin: 0 auto;
@@ -685,12 +702,11 @@ textarea:focus {
 }
 
 .brand__link {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  bottom: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,10 +723,8 @@ textarea:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  bottom: 0;
+  right: 0;
 }
 
 .brand__info {
