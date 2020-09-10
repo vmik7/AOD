@@ -492,11 +492,25 @@ textarea:focus {
 }
 
 .header {
-  background: url("../img/header-bg.jpg") center top/cover no-repeat;
+  position: relative;
+  min-height: 800px;
+}
+
+.header__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .header__container {
-  min-height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .header__top {
@@ -540,7 +554,7 @@ textarea:focus {
 }
 
 .header__logo {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 
@@ -820,16 +834,12 @@ textarea:focus {
 
 @media screen and (max-width: 1000px) {
   .header {
-    background-image: url("../img/header-bg-1000px.jpg");
-  }
-
-  .header__container {
     min-height: 506px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .header__container {
+  .header {
     min-height: 400px;
   }
 
@@ -932,7 +942,7 @@ textarea:focus {
 }
 
 @media screen and (max-width: 480px) {
-  .header__container {
+  .header {
     min-height: 300px;
   }
 
@@ -968,7 +978,7 @@ textarea:focus {
   }
 }
 @supports (-webkit-appearance:none){
-.header{background:url("../img/header-bg.webp") center top/cover no-repeat}
+
 }
 
  @media screen and (min-width: 769px){
@@ -998,7 +1008,7 @@ textarea:focus {
  @media screen and (max-width: 1000px){
 
 @supports (-webkit-appearance:none){
-.header{background-image:url("../img/header-bg-1000px.webp")}
+
 }
 
 }

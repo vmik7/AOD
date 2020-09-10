@@ -2,22 +2,33 @@
 // Header
 
 .header {
-    background: url('../img/header-bg.jpg') center top / cover no-repeat;
+    position: relative;
+    min-height: 800px;
     @media screen and (max-width: 1000px) {
-        background-image: url('../img/header-bg-1000px.jpg');
+        min-height: 506px;
+    }
+    @media screen and (max-width: $md3 + px) {
+        min-height: 400px;
+    }
+    @media screen and (max-width: $md4 + px) {
+        min-height: 300px;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
 
     &__container {
-        min-height: 800px;
-        @media screen and (max-width: 1000px) {
-            min-height: 506px;
-        }
-        @media screen and (max-width: $md3 + px) {
-            min-height: 400px;
-        }
-        @media screen and (max-width: $md4 + px) {
-            min-height: 300px;
-        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
     }
 
     &__top {
@@ -49,7 +60,7 @@
     }
 
     &__logo {
-        display: block;
+        display: inline-block;
         margin: 0 auto;
         
         @media screen and (max-width: $md3 + px) {
