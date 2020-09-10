@@ -63,8 +63,12 @@
         background: #fff;
         padding: 55px 65px;
 
-        @media screen and (max-width: 1300 + px) {
-            padding: 25px 35px;
+        @media screen and (max-width: 1300px) {
+            padding: 30px 35px 40px 35px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            padding: 55px 15px;
         }
 
         &::after {
@@ -72,7 +76,7 @@
             width: 0;
             height: 0;
             position: absolute;
-            bottom: -10px;
+            bottom: -9px;
             left: 50%;
             transform: translateX(-50%);
             border-top: 10px solid #fff;
@@ -84,6 +88,10 @@
 
     &__text {
         text-align: justify;
+        @media screen and (max-width: 1100px) {
+            text-align: center;
+        }
+
         &::after {
             content: "";
             display: block;
@@ -93,8 +101,8 @@
             background: #d7d7d7;
             margin-top: 35px;
 
-            @media screen and (max-width: 1300 + px) {
-                display: none;
+            @media screen and (max-width: 1300px) and (min-width: 1101px) {
+                margin-top: 25px;
             }
         }
     }

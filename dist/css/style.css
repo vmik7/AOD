@@ -761,7 +761,7 @@ textarea:focus {
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -10px;
+  bottom: -9px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -803,11 +803,7 @@ textarea:focus {
 
 @media screen and (max-width: 1300px) {
   .brand__info {
-    padding: 25px 35px;
-  }
-
-  .brand__text::after {
-    display: none;
+    padding: 30px 35px 40px 35px;
   }
 }
 
@@ -825,6 +821,14 @@ textarea:focus {
 
   .brand__column:first-child {
     padding-top: 56%;
+  }
+
+  .brand__info {
+    padding: 55px 15px;
+  }
+
+  .brand__text {
+    text-align: center;
   }
 }
 
@@ -973,6 +977,12 @@ textarea:focus {
     line-height: 25px;
   }
 }
+
+@media screen and (max-width: 1300px) and (min-width: 1101px) {
+  .brand__text::after {
+    margin-top: 25px;
+  }
+}
 @supports (-webkit-appearance:none){
 
 }
@@ -1018,6 +1028,14 @@ textarea:focus {
 }
 
  @media screen and (max-width: 480px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 1300px) and (min-width: 1101px){
 
 @supports (-webkit-appearance:none){
 
