@@ -112,10 +112,16 @@ a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
 
 
 
+// INCLUDES
+
+// Slick slider scss file
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+
+
 // BLOCKS
 
 @import 'blocks/page';
-// @import 'blocks/check';
 @import 'blocks/header';
 @import 'blocks/logo';
 @import 'blocks/menu';
