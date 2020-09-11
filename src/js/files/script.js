@@ -63,6 +63,7 @@ let postsSliderSelector = '.posts-section__slider';
 $(document).ready(() => {
     $(postsSliderSelector).slick({
         arrows: false,
-        dots: true
+        dots: true,
+        adaptiveHeight: true
     });
 });

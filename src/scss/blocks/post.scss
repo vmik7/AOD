@@ -2,9 +2,15 @@
 .post {
 
     &__icon {
+        margin: 0 auto;
+        text-align: center;
+
+        @media screen and (max-width: $md4 + px) {
+            width: 25px;
+        }
 
         img {
-            margin: 0 auto;
+            display: inline;
             max-width: 100%;
         }
     }
@@ -17,6 +23,16 @@
         color: $cape-cod;
         margin-top: 35px;
         margin-bottom: 20px;
+
+        @media screen and (max-width: $md3 + px) {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        @media screen and (max-width: $md4 + px) {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 15px 0;
+        }
     }
 
     &__time {
@@ -30,5 +46,16 @@
         font-size: 24px;
         line-height: 34px;
         color: $oslo-gray;
+        min-height: 6em;
+
+        @media screen and (max-width: $md3 + px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @media screen and (max-width: $md4 + px) {
+            font-size: 16px;
+            line-height: 25px;
+        }
     }
 }
