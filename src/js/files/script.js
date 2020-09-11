@@ -1,4 +1,6 @@
 
+
+
 // Blocking Elements functons
 
 function makeBlocking(element) {
@@ -7,6 +9,7 @@ function makeBlocking(element) {
 function undoBlocking(element) {
     document.$blockingElements.remove(element);
 }
+
 
 
 // Burger interactive
@@ -36,7 +39,7 @@ if (window.matchMedia('(max-width: 768px)').matches) {
         menuBody.inert = true;
         undoBlocking(menu);
     };
-    
+
     menuButton.addEventListener('click', () => {
         let expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
 
@@ -51,3 +54,15 @@ if (window.matchMedia('(max-width: 768px)').matches) {
     hideNavMenu();
 }
 
+
+
+// Slider on posts-section
+
+let postsSliderSelector = '.posts-section__slider';
+
+$(document).ready(() => {
+    $(postsSliderSelector).slick({
+        arrows: false,
+        dots: true
+    });
+});

@@ -76,7 +76,7 @@ function css() {
             overrideBrowserslist: ['last 5 versions'],
             cascade: true
         }))
-        .pipe(webpCss())
+        // .pipe(webpCss()) - error when using &-slider on scss file!
         .pipe(dest(path.build.css))
         .pipe(rename({
             extname: '.min.css'

@@ -1,0 +1,90 @@
+
+.posts-section {
+    padding-bottom: 65px;
+
+    &__slider {
+
+    }
+
+    .slick {
+        /* Слайдер */
+        &-slider {}
+    
+        /* Слайдер запущен */
+        &-slider.slick-initialized {}
+    
+        /* Слайдер с точками */
+        &-slider.slick-dotted {}
+    
+        /* Ограничивающая оболочка */
+        &-list {}
+    
+        /* Лента слайдов */
+        &-track {}
+    
+        /* Слайд */
+        &-slide {
+    
+            /* Слайд активный (показывается) */
+            &.slick-active {}
+    
+            /* Слайд основной */
+            &.slick-current {}
+    
+            /* Слайд по центру */
+            &.slick-center {}
+    
+            /* Клонированный слайд */
+            &.slick-cloned {}
+        }
+    
+        /* Стрелка */
+        &-arrow {
+    
+            /* Стрелка влево */
+            &.slick-prev {}
+    
+            /* Стрелка вправо */
+            &.slick-next {}
+    
+            /* Стрелка не активная */
+            &.slick-disabled {}
+        }
+    
+        /* Точки (булиты) */
+        &-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+    
+            li {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+    
+                /* Активная точка */
+                &.slick-active {
+                    button {
+                        background: #a9afb3;
+                    }
+                }
+    
+                /* Элемент точки */
+                button {
+                    font-size: 0;
+                    width: 11px;
+                    height: 11px;
+                    padding: 0;
+                    background: transparent;
+                    border: 1px solid #a9afb3;
+                    border-radius: 50%;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+
+    &__slide {
+    }
+}
