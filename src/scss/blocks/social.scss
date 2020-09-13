@@ -1,0 +1,19 @@
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        width: 35px;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        img {
+            max-width: 100%;
+        }
+    }
+}

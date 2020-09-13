@@ -2,5 +2,88 @@
 // Footer
 
 .footer {
-    
+    background: #f7f7f7;
+    padding: 100px;
+
+    @media screen and (max-width: $md3 + px) {
+        padding: 70px 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: $md3 + px) {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        flex: 0 1 50%;
+        text-align: left;
+
+        @media screen and (max-width: $md3 + px) {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+
+    &__header {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: $oslo-gray;
+
+        @media screen and (max-width: $md3 + px) {
+            line-height: 22px;
+        }
+    }
+
+    &__text {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 18px;
+        color: $oslo-gray;
+
+        @media screen and (max-width: $md3 + px) {
+            line-height: 22px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-style: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+    }
+
+    &__center {
+        flex: 0 0 200px;
+
+        @media screen and (max-width: $md3 + px) {
+            flex: 1 1 100%;
+            text-align: center;
+            margin: 20px auto;
+        }
+    }
+
+    &__social {
+    }
+
+    &__right {
+        flex: 0 1 50%;
+        text-align: right;
+
+        @media screen and (max-width: $md3 + px) {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+
+    &__yebo-logo {
+        margin-left: 10px;
+    }
 }
