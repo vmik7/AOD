@@ -1,7 +1,7 @@
 {
-  "name": "personalblog",
+  "name": "AOD",
   "version": "1.0.0",
-  "description": "Personal blog web-site layout",
+  "description": "AOD web-site layout",
   "main": "index.html",
   "scripts": {
     "start": "gulp",
