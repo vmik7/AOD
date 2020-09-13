@@ -220,6 +220,15 @@ audio:not([controls]) {
  *    user zoom.
  */
 
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
@@ -241,6 +250,13 @@ a:hover {
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
+
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
 
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
@@ -274,12 +290,36 @@ fieldset {
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
 
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
 /**
  * 1. Correct font size not being inherited in all browsers.
  * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
@@ -313,6 +353,18 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
 /**
  * Re-set default cursor for disabled elements.
  */
@@ -329,11 +381,32 @@ html input[disabled] {
  *    Known issue: excess padding remains in IE 6.
  */
 
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
 
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
@@ -359,6 +432,13 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
  */
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
 
 /**
  * Remove most spacing between table cells.
@@ -992,7 +1072,6 @@ textarea:focus {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  cursor: pointer;
 }
 
 .post__icon {
@@ -1029,6 +1108,97 @@ textarea:focus {
   min-height: 6em;
 }
 
+.shop-section__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: dense;
+}
+
+.shop-section__card_rowspan {
+  grid-row: span 2;
+}
+
+.shop-section__card_colspan {
+  grid-column: span 2;
+}
+
+.shop-section__footer {
+  background: #282f35;
+  padding: 75px 0;
+}
+
+.shop-section__button {
+  display: block;
+  margin: 0 auto;
+  padding: 0 56px;
+  border: 1px solid #94979a;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.shop-card {
+  position: relative;
+  padding-top: 50%;
+}
+
+.shop-card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+  background: rgba(100, 194, 158, 0);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  color: #fff;
+}
+
+.shop-card__link:focus {
+  outline: 0;
+}
+
+.shop-card__img {
+  margin-bottom: 12px;
+}
+
+.shop-card__label {
+  display: block;
+}
+
+.shop-card__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 @media screen and (min-width: 769px) {
   .menu__item:not(:last-child)::after {
     content: ".";
@@ -1036,6 +1206,12 @@ textarea:focus {
     font-weight: 700;
     font-size: 13px;
     margin: 0 30px;
+  }
+
+  .shop-card__link:hover,
+  .shop-card__link.focus-visible {
+    background: rgba(100, 194, 158, 0.7);
+    opacity: 1;
   }
 }
 
@@ -1187,6 +1363,11 @@ textarea:focus {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .shop-section__cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1238,6 +1419,11 @@ textarea:focus {
   .post__text {
     font-size: 16px;
     line-height: 25px;
+  }
+
+  .shop-section__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 

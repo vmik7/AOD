@@ -1,0 +1,50 @@
+
+.shop-section {
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: dense;
+
+        @media screen and (max-width: $md3 + px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        @media screen and (max-width: $md4 + px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+    }
+
+    &__card {
+
+        &_rowspan {
+            grid-row: span 2;
+        }
+
+        &_colspan {
+            grid-column: span 2;
+        }
+    }
+
+    &__footer {
+        background: $outer-space;
+        padding: 75px 0;
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        padding: 0 56px;
+        border: 1px solid #94979a;
+
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 14px;
+        line-height: 48px;
+        color: #fff;
+    }
+}

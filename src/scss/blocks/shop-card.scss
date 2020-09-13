@@ -1,0 +1,55 @@
+
+.shop-card {
+    position: relative;
+    padding-top: 50%;
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+        background: rgba(100, 194, 158, 0);
+        transition: all 0.3s ease;
+        opacity: 0;
+
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.2em;
+        font-size: 14px;
+        color: #fff;
+
+        &:focus {
+            @include no-focus-outline();
+        }
+
+        &:hover, &.focus-visible {
+            @media screen and (min-width: $md3 + 1 + px) {
+                background: rgba(100, 194, 158, 0.7);
+                opacity: 1;
+            }
+        }
+    }
+
+    &__img {
+        margin-bottom: 12px;
+    }
+
+    &__label {
+        display: block;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
