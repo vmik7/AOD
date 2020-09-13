@@ -1,0 +1,57 @@
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: $md3 + px) {
+        flex-direction: column;
+    }
+
+    &__email {
+        height: 70px;
+        width: 100%;
+        display: block;
+        border: 1px solid #d3d7d9;
+        background: transparent;
+        padding: 0 28px;
+
+        font-style: italic;
+        font-size: 20px;
+        line-height: 24px;
+        color: #cdcdcd;
+        &::placeholder {
+            color: #cdcdcd;
+        }
+
+        @media screen and (min-width: $md3 + 1 + px) {
+            max-width: 400px;
+            margin-right: 10px;
+        }
+        @media screen and (max-width: $md3 + px) {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__submit {
+        height: 70px;
+        width: 100%;
+        max-width: 126px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 24px;
+        color: #fff;
+        background: $silver-tree;
+
+        @media screen and (min-width: $md3 + 1 + px) {
+            max-width: 126px;
+        }
+        @media screen and (max-width: $md3 + px) {
+            max-width: 100%;
+        }
+    }
+}

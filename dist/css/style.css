@@ -1199,6 +1199,89 @@ textarea:focus {
   right: 0;
 }
 
+.subscribe-section {
+  background: #fff;
+}
+
+.subscribe-section__logo {
+  text-align: center;
+}
+
+.subscribe-section__label {
+  text-align: center;
+  margin: 35px auto;
+  font-size: 24px;
+  line-height: 34px;
+  font-style: italic;
+  color: #848789;
+}
+
+.subscribe-section__form {
+  text-align: center;
+}
+
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe-form__email {
+  height: 70px;
+  width: 100%;
+  display: block;
+  border: 1px solid #d3d7d9;
+  background: transparent;
+  padding: 0 28px;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 24px;
+  color: #cdcdcd;
+}
+
+.subscribe-form__email::-webkit-input-placeholder {
+  color: #cdcdcd;
+}
+
+.subscribe-form__email::-moz-placeholder {
+  color: #cdcdcd;
+}
+
+.subscribe-form__email:-ms-input-placeholder {
+  color: #cdcdcd;
+}
+
+.subscribe-form__email::-ms-input-placeholder {
+  color: #cdcdcd;
+}
+
+.subscribe-form__email::placeholder {
+  color: #cdcdcd;
+}
+
+.subscribe-form__submit {
+  height: 70px;
+  width: 100%;
+  max-width: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  background: #64c29e;
+}
+
 @media screen and (min-width: 769px) {
   .menu__item:not(:last-child)::after {
     content: ".";
@@ -1212,6 +1295,15 @@ textarea:focus {
   .shop-card__link.focus-visible {
     background: rgba(100, 194, 158, 0.7);
     opacity: 1;
+  }
+
+  .subscribe-form__email {
+    max-width: 400px;
+    margin-right: 10px;
+  }
+
+  .subscribe-form__submit {
+    max-width: 126px;
   }
 }
 
@@ -1367,6 +1459,22 @@ textarea:focus {
   .shop-section__cards {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+  }
+
+  .subscribe-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .subscribe-form__email {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-form__submit {
+    max-width: 100%;
   }
 }
 
