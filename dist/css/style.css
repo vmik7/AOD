@@ -1204,7 +1204,9 @@ textarea:focus {
 }
 
 .subscribe-section__logo {
+  display: block;
   text-align: center;
+  margin: 0 auto;
 }
 
 .subscribe-section__label {
@@ -1661,6 +1663,29 @@ textarea:focus {
   .shop-section__cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
+  }
+
+  .subscribe-section__logo {
+    width: 70px;
+  }
+
+  .subscribe-section__label {
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .subscribe-form__email {
+    font-size: 16px;
+    line-height: 20;
+    height: 55px;
+    padding: 0 15px;
+  }
+
+  .subscribe-form__submit {
+    font-size: 16px;
+    line-height: 20;
+    height: 55px;
   }
 }
 

@@ -3,7 +3,13 @@
     background: #fff;
 
     &__logo {
+        display: block;
         text-align: center;
+        margin: 0 auto;
+
+        @media screen and (max-width: $md4 + px) {
+            width: 70px;
+        }
     }
 
     &__label {
@@ -13,6 +19,12 @@
         line-height: 34px;
         font-style: italic;
         color: $oslo-gray;
+
+        @media screen and (max-width: $md4 + px) {
+            margin: 20px auto;
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 
     &__form {
