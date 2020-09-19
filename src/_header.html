@@ -33,7 +33,18 @@
             </div>
         </div>
     </div>
-    <div class="header__background ibg">
-        <img src="img/header-bg.jpg" alt="Header background">
+    <div class="header__background">
+        <picture>
+            <source srcset="img/header-bg_800px.webp"
+                    media="(max-width: 800px)"
+                    type="image/webp">
+            <source srcset="img/header-bg_800px.jpg"
+                    media="(max-width: 800px)">
+            <source srcset="img/header-bg.webp"
+                    type="image/webp">
+            <img    src="img/header-bg.jpg"
+                    alt="Header background">
+        </picture>
+        
     </div>
 </header>

@@ -700,6 +700,7 @@ textarea:focus {
 .header {
   position: relative;
   min-height: 800px;
+  height: 100vh;
 }
 
 .header__background {
@@ -708,6 +709,13 @@ textarea:focus {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.header__background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__container {
