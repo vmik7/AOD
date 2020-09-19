@@ -20,12 +20,6 @@
 
 
 
-// IBG (image to background)
-
-@@include('files/ibg.js', {})
-
-
-
 // Dynamic Adapt (https://www.youtube.com/watch?v=QKuMr575vlQ)
 
 @@include('libs/dynamic_adapt/da.js', {})
