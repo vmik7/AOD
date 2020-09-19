@@ -956,6 +956,13 @@ textarea:focus {
   right: 0;
 }
 
+.brand__background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .brand__info {
   position: relative;
   background: #fff;
@@ -994,7 +1001,13 @@ textarea:focus {
 
 .brand__image {
   position: relative;
-  padding-top: 37%;
+}
+
+.brand__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .posts-section {
@@ -1187,6 +1200,13 @@ textarea:focus {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.shop-card__background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .subscribe-section {
